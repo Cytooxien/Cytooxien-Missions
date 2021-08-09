@@ -30,6 +30,12 @@
             "items": {
               "$ref": "#/$defs/objective"
             }
+          },
+          "rewards": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/reward"
+            }
           }
         }
       }
