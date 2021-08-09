@@ -1,0 +1,30 @@
+{
+  "id": "template1",
+  "displayName": "Template 1",
+  "description": "Template 2",
+  "stages": [
+    {
+      "objectives": [
+        {
+          "id": "task1",
+          "displayName": "Spawn",
+          "type": "ActionEventObjective",
+          "goal": 10,
+          "options": {
+            "action": "spawn"
+          }
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "reward1",
+      "displayName": "10$ Belohnung",
+      "type": "TransactionReward",
+      "options": {
+        "amount": 10.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "exampleQuest1",
+  "displayName": "Beispiel Quest 1",
+  "description": "Farme Stein Blöcke",
+  "stages": [
+    {
+      "objectives": [
+        {
+          "id": "break10Stone",
+          "displayName": "Baue 10 Steinblöcke ab.",
+          "goal": 10,
+          "type": "BreakBlockObjective",
+          "options": {
+            "blocks": [
+              "minecraft:stone"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objectives": [
+        {
+          "id": "break20Stone",
+          "displayName": "Baue 20 Steinblöcke ab.",
+          "goal": 20,
+          "type": "BreakBlockObjective",
+          "options": {
+            "blocks": [
+              "minecraft:stone"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [],
+  "rewards": [
+    {
+      "id": "diamondReward",
+      "displayName": "1x Diamant",
+      "type": "ItemStackReward",
+      "options": {
+        "items": ["{DataVersion:2586,id:\"minecraft:diamond\",Count:1b}"]
+      }
+    }
+  ]
+}

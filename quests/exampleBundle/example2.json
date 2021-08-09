@@ -1,0 +1,46 @@
+{
+  "id": "exampleQuest2",
+  "displayName": "Held der Steine TM",
+  "description": "Held der Steine TM",
+  "stages": [
+    {
+      "objectives": [
+        {
+          "id": "handIn1",
+          "displayName": "Gebe 10 Steine ab",
+          "goal": 10,
+          "type": "HandInItemObjective",
+          "options": {
+            "items": [
+              "minecraft:stone"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "missionCompleted",
+      "displayName": "Abgeschlossene Missionen",
+      "type": "QuestCompletedRequirement",
+      "options": {
+        "quests": [
+          "exampleQuest1"
+        ]
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "id": "diamondReward",
+      "displayName": "1x Diamant",
+      "type": "ItemStackReward",
+      "options": {
+        "items": [
+          "DIAMOND"
+        ]
+      }
+    }
+  ]
+}
