@@ -51,7 +51,7 @@ ___
 
 - Beschreibung: Tiere töten
 - Kinder:
-    - AbstractBlockObjective
+    - AbstractEntityObjective
 - Options:
 
 ***
@@ -60,7 +60,7 @@ ___
 
 - Beschreibung: Tiere züchten
 - Kinder:
-    - AbstractBlockObjective
+    - AbstractEntityObjective
 - Options:
 
 ***
