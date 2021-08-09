@@ -45,6 +45,18 @@
       "items": {
         "$ref": "#/$defs/reward"
       }
+    },
+    "options": {
+      "type": "object",
+      "description": "Optionale Einstellungen für die Mission",
+      "properties": {
+        "display": {
+          "type": "string"
+        },
+        "bossBar": {
+          "type": "boolean"
+        }
+      }
     }
   },
   "$defs": {
@@ -149,7 +161,12 @@
         },
         "options": {
           "type": "object",
-          "description": "Optionale Einstellungen abhängig von dem Objective Typ"
+          "description": "Optionale Einstellungen abhängig von dem Objective Typ",
+          "properties": {
+            "display": {
+              "type": "string"
+            }
+          }
         }
       }
     }
