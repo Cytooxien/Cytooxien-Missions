@@ -51,9 +51,11 @@
       "description": "Optionale Einstellungen für die Mission",
       "properties": {
         "display": {
+          "description": "Anzeige Item",
           "type": "string"
         },
         "bossBar": {
+          "description": "Soll die BossBar während der Mission angezeigt werden",
           "type": "boolean"
         }
       }
@@ -164,6 +166,7 @@
           "description": "Optionale Einstellungen abhängig von dem Objective Typ",
           "properties": {
             "display": {
+              "description": "Anzeige Item",
               "type": "string"
             }
           }
