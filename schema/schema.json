@@ -94,7 +94,18 @@
         },
         "options": {
           "type": "object",
-          "description": "Optionale Einstellungen abhängig von dem Reward Typ"
+          "description": "Optionale Einstellungen abhängig von dem Reward Typ",
+          "properties": {
+            "items": {
+              "description": "Item Liste",
+              "$ref": "#/$defs/stringArray"
+            },
+            "amount": {
+              "description": "Transaction Reward Amount",
+              "minimum": 1,
+              "type": "number"
+            }
+          }
         }
       }
     },
@@ -128,7 +139,17 @@
         },
         "options": {
           "type": "object",
-          "description": "Optionale Einstellungen abhängig von dem Requirement Typ"
+          "description": "Optionale Einstellungen abhängig von dem Requirement Typ",
+          "properties": {
+            "quests": {
+              "description": "Liste der Quest Ids",
+              "$ref": "#/$defs/stringArray"
+            },
+            "accessLevel": {
+              "minimum": 1,
+              "type": "integer"
+            }
+          }
         }
       }
     },
@@ -151,6 +172,7 @@
         },
         "goal": {
           "type": "integer",
+          "minimum": 1,
           "description": "Der maximale Wert (Ziel), der erreicht werden kann."
         },
         "type": {
@@ -175,10 +197,87 @@
             "display": {
               "description": "Anzeige Item",
               "type": "string"
+            },
+            "items": {
+              "description": "Item Liste",
+              "$ref": "#/$defs/stringArray"
+            },
+            "blocks": {
+              "description": "Blöcke Liste",
+              "$ref": "#/$defs/stringArray"
+            },
+            "entities": {
+              "description": "Entity Liste",
+              "$ref": "#/$defs/stringArray"
+            },
+            "action": {
+              "type": "string"
+            },
+            "location": {
+              "type": "object",
+              "$ref": "#/$defs/worldServerLocation"
+            },
+            "npc": {
+              "type": "object",
+              "$ref": "#/$defs/npcData"
             }
           }
         }
       }
+    },
+    "stringArray": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "worldServerLocation": {
+      "type": "object",
+      "properties": {
+        "x" : {
+          "type": "number"
+        },
+        "y" : {
+          "type": "number"
+        },
+        "z" : {
+          "type": "number"
+        },
+        "yaw" : {
+          "type": "number"
+        },
+        "pitch" : {
+          "type": "number"
+        },
+        "world": {
+          "description": "Welten UUID",
+          "type": "string"
+        },
+        "server" : {
+          "description": "Server NameId",
+          "type": "string"
+        }
+      },
+      "required": ["x", "y", "z", "server", "world"]
+    },
+    "npcData": {
+      "type": "object",
+      "properties": {
+        "skinValue": {
+          "description": "Base64 encoded Texture Data",
+          "type": "string"
+        },
+        "skinSignature": {
+          "description": "Base64 encoded Texture Signature",
+          "type": "string"
+        },
+        "name": {
+          "description": "NPC Name (Tablist)",
+          "type": "string"
+        }
+      },
+      "required": ["skinValue", "skinSignature", "name"]
     }
   }
 }
