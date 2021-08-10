@@ -121,3 +121,15 @@ ___
 Übersicht der Action findest du hier: [Übersicht Actions](actions.md)
 
 ***
+
+
+### CraftItemObjective
+
+- Beschreibung: Gegenstand hergestellt
+- Kinder:
+  - AbstractItemObjective
+- Options:
+
+Übersicht der Action findest du hier: [Übersicht Actions](actions.md)
+
+***

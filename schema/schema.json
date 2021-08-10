@@ -164,7 +164,8 @@
             "FishItemObjective",
             "HandInItemObjective",
             "TalkToNPCObjective",
-            "ActionEventObjective"
+            "ActionEventObjective",
+            "CraftItemObjective"
           ]
         },
         "options": {
