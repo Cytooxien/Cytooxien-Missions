@@ -187,7 +187,8 @@
             "HandInItemObjective",
             "TalkToNPCObjective",
             "ActionEventObjective",
-            "CraftItemObjective"
+            "CraftItemObjective",
+            "ActivateQuestObjective"
           ]
         },
         "options": {
@@ -220,6 +221,9 @@
             "npc": {
               "type": "object",
               "$ref": "#/$defs/npcData"
+            },
+            "quest": {
+              "$ref": "#/$defs/questIdentifier"
             }
           }
         }
@@ -278,6 +282,20 @@
         }
       },
       "required": ["skinValue", "skinSignature", "name"]
+    },
+    "questIdentifier": {
+      "type": "object",
+      "properties": {
+        "bundle": {
+          "description": "Quest Bundle Id",
+          "type": "string"
+        },
+        "id": {
+          "description": "Quest Id",
+          "type": "string"
+        }
+      },
+      "required": ["bundle", "id"]
     }
   }
 }

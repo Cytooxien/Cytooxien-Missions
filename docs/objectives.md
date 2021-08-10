@@ -103,7 +103,7 @@ ___
     "server": "cbspawn-1"
   },
   "npc": {
-    "skinValue" : "value",
+    "skinValue": "value",
     "skinSignature": "sig",
     "name": "NPC Name"
   }
@@ -116,20 +116,33 @@ ___
 
 - Beschreibung: Reagiere auf feste Events (action)
 - Options:
-  - action: "slum_teleport" 
+    - action: "slum_teleport"
 
 Übersicht der Action findest du hier: [Übersicht Actions](actions.md)
 
 ***
 
-
 ### CraftItemObjective
 
 - Beschreibung: Gegenstand hergestellt
 - Kinder:
-  - AbstractItemObjective
+    - AbstractItemObjective
 - Options:
 
-Übersicht der Action findest du hier: [Übersicht Actions](actions.md)
+***
+
+### ActivateQuestObjective
+
+- Beschreibung: Der Spieler startet eine Quest
+- Options:
+
+```json
+{
+  "quest": {
+    "bundle": "tutorial",
+    "id": "beginner"
+  }
+}
+```
 
 ***
