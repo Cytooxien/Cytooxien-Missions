@@ -1,0 +1,46 @@
+{
+  "id": "template1",
+  "displayName": "Template 1",
+  "description": "Template 2",
+  "stages": [
+    {
+      "objectives": [
+        {
+          "id": "task1",
+          "displayName": "1",
+          "type": "EnchantItemObjective",
+          "goal": 1,
+          "options": {
+            "items": [
+              "stone_sword"
+            ],
+            "enchantments": [
+              "minecraft:protection"
+            ]
+          }
+        },
+        {
+          "id": "task2",
+          "displayName": "2",
+          "type": "FurnaceExtractItemObjective",
+          "goal": 1,
+          "options": {
+            "items": [
+              "iron_ingot"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "reward1",
+      "displayName": "10$ Belohnung",
+      "type": "TransactionReward",
+      "options": {
+        "amount": 10.0
+      }
+    }
+  ]
+}

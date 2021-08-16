@@ -1,0 +1,60 @@
+{
+  "id": "2d_home",
+  "displayName": "Dein eigenes Heim",
+  "description": "Errichte dein erstes eigenes Heim.",
+  "options": {
+    "display": "red_bed"
+  },
+  "stages": [
+    {
+      "objectives": [
+        {
+          "id": "place_door",
+          "displayName": "Platziere eine Eingangstür!",
+          "goal": 1,
+          "type": "PlaceBlockObjective",
+          "options": {
+            "display": "spruce_door",
+            "blocks": [
+              "#minecraft:wooden_doors"
+            ]
+          }
+        },
+        {
+          "id": "craft_bed",
+          "displayName": "Baue dir ein Bett!",
+          "goal": 1,
+          "type": "CraftItemObjective",
+          "options": {
+            "display": "red_bed",
+            "items": [
+              "#minecraft:beds"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "req_1",
+      "type": "QuestCompletedRequirement",
+      "options": {
+        "quests": [
+          "1a_ressources",
+          "1b_iron"
+        ]
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "id": "moneyreward",
+      "displayName": "20 Münzen",
+      "type": "TransactionReward",
+      "options": {
+        "amount": 20.0
+      }
+    }
+  ]
+}

@@ -188,7 +188,9 @@
             "TalkToNPCObjective",
             "ActionEventObjective",
             "CraftItemObjective",
-            "ActivateQuestObjective"
+            "ActivateQuestObjective",
+            "FurnaceExtractItemObjective",
+            "EnchantItemObjective"
           ]
         },
         "options": {
@@ -224,6 +226,10 @@
             },
             "quest": {
               "$ref": "#/$defs/questIdentifier"
+            },
+            "enchantments": {
+              "description": "Liste von Namespaced Enchantments",
+              "$ref": "#/$defs/stringArray"
             }
           }
         }
@@ -239,31 +245,37 @@
     "worldServerLocation": {
       "type": "object",
       "properties": {
-        "x" : {
+        "x": {
           "type": "number"
         },
-        "y" : {
+        "y": {
           "type": "number"
         },
-        "z" : {
+        "z": {
           "type": "number"
         },
-        "yaw" : {
+        "yaw": {
           "type": "number"
         },
-        "pitch" : {
+        "pitch": {
           "type": "number"
         },
         "world": {
           "description": "Welten UUID",
           "type": "string"
         },
-        "server" : {
+        "server": {
           "description": "Server NameId",
           "type": "string"
         }
       },
-      "required": ["x", "y", "z", "server", "world"]
+      "required": [
+        "x",
+        "y",
+        "z",
+        "server",
+        "world"
+      ]
     },
     "npcData": {
       "type": "object",
@@ -281,7 +293,11 @@
           "type": "string"
         }
       },
-      "required": ["skinValue", "skinSignature", "name"]
+      "required": [
+        "skinValue",
+        "skinSignature",
+        "name"
+      ]
     },
     "questIdentifier": {
       "type": "object",
@@ -295,7 +311,10 @@
           "type": "string"
         }
       },
-      "required": ["bundle", "id"]
+      "required": [
+        "bundle",
+        "id"
+      ]
     }
   }
 }

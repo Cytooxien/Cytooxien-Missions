@@ -1,0 +1,84 @@
+{
+  "id": "2f_mobs",
+  "displayName": "Monsterjagd",
+  "description": "Rüste dich aus und helfe ein paar fiese Monster zu bekämpfen!",
+  "options": {
+    "display": "zombie_head"
+  },
+  "stages": [
+    {
+      "objectives": [
+        {
+          "id": "kill_creeper",
+          "displayName": "Töte 5 Creeper",
+          "goal": 5,
+          "type": "KillEntityObjective",
+          "options": {
+            "display": "creeper_head",
+            "entities": [
+              "minecraft:creeper"
+            ]
+          }
+        },
+        {
+          "id": "kill_zombie",
+          "displayName": "Töte 10 Zombies",
+          "goal": 10,
+          "type": "KillEntityObjective",
+          "options": {
+            "display": "zombie_head",
+            "entities": [
+              "minecraft:zombie"
+            ]
+          }
+        },
+        {
+          "id": "collect_bones",
+          "displayName": "Bringe mir 10 Knochen",
+          "goal": 10,
+          "type": "HandInItemObjective",
+          "options": {
+            "display": "bone",
+            "blocks": [
+              "minecraft:bone"
+            ]
+          }
+        },
+        {
+          "id": "collect_spidereye",
+          "displayName": "Bringe mir 10 Spinnenaugen",
+          "goal": 10,
+          "type": "HandInItemObjective",
+          "options": {
+            "display": "spider_eye",
+            "blocks": [
+              "minecraft:spider_eye"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "req_1",
+      "type": "QuestCompletedRequirement",
+      "options": {
+        "quests": [
+          "1a_ressources",
+          "1b_iron"
+        ]
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "id": "moneyreward",
+      "displayName": "45 Münzen",
+      "type": "TransactionReward",
+      "options": {
+        "amount": 45.0
+      }
+    }
+  ]
+}

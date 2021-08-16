@@ -1,0 +1,109 @@
+{
+  "id": "2g_nether",
+  "displayName": "In die Unterwelt",
+  "description": "Begebe dich in die Hölle für ein paar gefährliche Besorgungen.",
+
+  "options": {
+    "display": "blaze_rod"
+  },
+  "stages": [
+    {
+      "objectives": [
+        {
+          "id": "break_obsidian",
+          "displayName": "Baue 10 Obsidian für ein Portal ab!",
+          "goal": 10,
+          "type": "BreakBlockObjective",
+          "options": {
+            "display": "obsidian",
+            "blocks": [
+              "minecraft:obsidian"
+            ]
+          }
+        },
+        {
+          "id": "craft_flintsteel",
+          "displayName": "Crafte dir ein Feuerzeug!",
+          "goal": 1,
+          "type": "CraftItemObjective",
+          "options": {
+            "display": "flint_and_steel",
+            "items": [
+              "minecraft:flint_and_steel"
+            ]
+          }
+        },
+        {
+          "id": "break_netherquartz",
+          "displayName": "Baue 32 Netzerquarz ab!",
+          "goal": 32,
+          "type": "BreakBlockObjective",
+          "options": {
+            "display": "nether_quartz",
+            "blocks": [
+              "minecraft:nether_quartz_ore"
+            ]
+          }
+        },
+        {
+          "id": "break_glowstone",
+          "displayName": "Baue 16 Glowstone ab!",
+          "goal": 16,
+          "type": "BreakBlockObjective",
+          "options": {
+            "display": "glowstone",
+            "blocks": [
+              "minecraft:glowstone"
+            ]
+          }
+        },
+        {
+          "id": "collect_netherwart",
+          "displayName": "Bringe mir 10 Netherwarzen!",
+          "goal": 10,
+          "type": "HandInItemObjective",
+          "options": {
+            "display": "nether_wart",
+            "blocks": [
+              "minecraft:nether_wart"
+            ]
+          }
+        },
+        {
+          "id": "collect_blazerod",
+          "displayName": "Bringe mir eine Lohenrute!",
+          "goal": 1,
+          "type": "HandInItemObjective",
+          "options": {
+            "display": "blaze_rod",
+            "blocks": [
+              "minecraft:blaze_rod"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "req_1",
+      "type": "QuestCompletedRequirement",
+      "options": {
+        "quests": [
+          "1a_ressources",
+          "1b_iron"
+        ]
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "id": "moneyreward",
+      "displayName": "100 Münzen",
+      "type": "TransactionReward",
+      "options": {
+        "amount": 100.0
+      }
+    }
+  ]
+}

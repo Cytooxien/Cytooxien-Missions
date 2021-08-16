@@ -1,0 +1,96 @@
+{
+  "id": "2c_wheat",
+  "displayName": "Die erste Ernte",
+  "description": "Beweise einen gründen Daumen und lege auf deinem Grundstück ein Feld an.",
+  "options": {
+    "display": "wheat"
+  },
+  "stages": [
+    {
+      "objectives": [
+        {
+          "id": "plant_seeds",
+          "displayName": "Pflanze 10x Weizensamen ein!",
+          "goal": 10,
+          "type": "PlaceBlockObjective",
+          "options": {
+            "display": "wheat_seeds",
+            "blocks": [
+              "minecraft:wheat_seeds"
+            ]
+          }
+        },
+        {
+          "id": "break_wheat",
+          "displayName": "Ernte 10x ausgewachsenes Weizen ab!",
+          "goal": 10,
+          "type": "BreakBlockObjective",
+          "options": {
+            "display": "iron_hoe",
+            "blocks": [
+              "minecraft:wheat[age=7]"
+            ]
+          }
+        },
+        {
+          "id": "plant_trees",
+          "displayName": "Pflanze 5 Bäume an!",
+          "goal": 5,
+          "type": "PlaceBlockObjective",
+          "options": {
+            "display": "oak_sapling",
+            "blocks": [
+              "#minecraft:saplings"
+            ]
+          }
+        },
+        {
+          "id": "collect_flowers",
+          "displayName": "Bringe mir 20 Blumen!",
+          "goal": 20,
+          "type": "HandInItemObjective",
+          "options": {
+            "display": "poppy",
+            "blocks": [
+              "#minecraft:flowers"
+            ]
+          }
+        },
+        {
+          "id": "collect_sugarcane",
+          "displayName": "Bringe mir 10x Zuckerrohr!",
+          "goal": 10,
+          "type": "HandInItemObjective",
+          "options": {
+            "display": "sugarcane",
+            "blocks": [
+              "minecraft:sugarcane"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "req_1",
+      "type": "QuestCompletedRequirement",
+      "options": {
+        "quests": [
+          "1a_ressources",
+          "1b_iron"
+        ]
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "id": "moneyreward",
+      "displayName": "70 Münzen",
+      "type": "TransactionReward",
+      "options": {
+        "amount": 70.0
+      }
+    }
+  ]
+}

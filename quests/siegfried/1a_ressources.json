@@ -1,0 +1,62 @@
+{
+  "id": "1a_ressources",
+  "displayName": "An die Arbeit",
+  "description": "Baue in den Farmwelten ein paar Ressourcen ab.",
+  "options": {
+    "display": "wooden_axe"
+  },
+  "stages": [
+    {
+      "objectives": [
+        {
+          "id": "break_wood",
+          "displayName": "Baue 16 Holzstämme ab!",
+          "goal": 16,
+          "type": "BreakBlockObjective",
+          "options": {
+            "display": "oak_log",
+            "blocks": [
+              "#minecraft:logs"
+            ]
+          }
+        },
+        {
+          "id": "break_stone",
+          "displayName": "Baue 64 Steine ab!",
+          "goal": 64,
+          "type": "BreakBlockObjective",
+          "options": {
+            "display": "cobblestone",
+            "blocks": [
+              "#minecraft:base_stone_overworld"
+            ]
+          }
+        },
+        {
+          "id": "break_coal",
+          "displayName": "Baue 16 Kohle ab!",
+          "goal": 16,
+          "type": "BreakBlockObjective",
+          "options": {
+            "display": "coal",
+            "blocks": [
+              "minecraft:coal_ore",
+              "minecraft:deepslate_coal_ore"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [],
+  "rewards": [
+    {
+      "id": "moneyreward",
+      "displayName": "30 Münzen",
+      "type": "TransactionReward",
+      "options": {
+        "amount": 30.0
+      }
+    }
+  ]
+}

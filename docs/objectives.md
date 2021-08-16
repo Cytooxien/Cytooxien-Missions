@@ -146,3 +146,36 @@ ___
 ```
 
 ***
+
+### FurnaceExtractItemObjective
+
+- Beschreibung: Ein Gegenstand/Gegenstände wird/werden aus dem Ofen Inventar entnommen
+- Kinder:
+    - AbstractItemObjective
+- Options:
+
+***
+
+### EnchantItemObjective
+
+- Beschreibung: Ein Gegenstand/Gegenstände wird/werden aus dem Ofen Inventar entnommen
+- Kinder:
+    - AbstractItemObjective
+- Options:
+    - enchantments: String Array mit Namespaced Enchantments (Optional)
+
+Beispiel:
+```json
+{
+  "options": {
+    "items": [
+      "stone_sword"
+    ],
+    "enchantments": [
+      "minecraft:protection"
+    ]
+  }
+}
+```
+
+***

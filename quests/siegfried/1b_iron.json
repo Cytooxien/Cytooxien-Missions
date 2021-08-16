@@ -1,0 +1,73 @@
+{
+  "id": "1b_iron",
+  "displayName": "Rüste dich aus",
+  "description": "Begebe dich auf die Suche nach Eisen und rüste dich damit aus.",
+  "options": {
+    "display": "iron_pickaxe"
+  },
+  "stages": [
+    {
+      "objectives": [
+        {
+          "id": "break_iron",
+          "displayName": "Finde 20x Eisen!",
+          "goal": 20,
+          "type": "BreakBlockObjective",
+          "options": {
+            "display": "iron_ingot",
+            "blocks": [
+              "#minecraft:iron_ores"
+            ]
+          }
+        },
+        {
+          "id": "craft_pickaxe",
+          "displayName": "Crafte dir eine Eisen-Spitzhacke",
+          "goal": 1,
+          "type": "CraftItemObjective",
+          "options": {
+            "display": "iron_pickaxe",
+            "items": [
+              "minecraft:iron_pickaxe"
+            ]
+          }
+        },
+        {
+          "id": "craft_axe",
+          "displayName": "Crafte dir eine Eisen-Axt",
+          "goal": 1,
+          "type": "CraftItemObjective",
+          "options": {
+            "display": "iron_axe",
+            "items": [
+              "minecraft:iron_axe"
+            ]
+          }
+        },
+        {
+          "id": "craft_shovel",
+          "displayName": "Crafte dir eine Eisen-Schaufel",
+          "goal": 1,
+          "type": "CraftItemObjective",
+          "options": {
+            "display": "iron_shovel",
+            "items": [
+              "minecraft:iron_shovel"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [],
+  "rewards": [
+    {
+      "id": "moneyreward",
+      "displayName": "30 Münzen",
+      "type": "TransactionReward",
+      "options": {
+        "amount": 30.0
+      }
+    }
+  ]
+}
