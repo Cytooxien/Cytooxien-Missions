@@ -1,6 +1,6 @@
-#Action Ids
+# Action Ids
 
-##Allgemeine Actions
+## Allgemeine Actions
 
 | Id         | Beschreibung |
 |---------------|----------|

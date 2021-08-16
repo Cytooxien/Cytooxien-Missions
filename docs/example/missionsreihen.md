@@ -1,16 +1,16 @@
-#Missionsreihen
+# Missionsreihen
 Eine Missionsreihe besteht aus mehreren Missionen, die thematisch zusammenhängend sind.
 Der Spieler sollte die Missionen fortlaufend freischalten. 
 
 
-##Aufbau
+## Aufbau
 Eine Missionsreihe sollte aus 20-30 Missionen bestehen, die der Spieler nacheinander freischalten kann.
 Der Aufbau einer Quest für eine Missionreihe sollte **eine Stage** mit mindestens **2-3 Objectives** enthalten.
 
 Als Beispielaufbau, kann siegfried benutzt werden.
 
 
-#Screenshots
+# Screenshots
 
 Hier findest du ein paar Screenshots wie die Missionsreihen aufgebaut sind.
 
