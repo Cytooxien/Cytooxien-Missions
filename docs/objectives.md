@@ -179,3 +179,12 @@ Beispiel:
 ```
 
 ***
+
+### BucketEntityObjective
+
+- Beschreibung: Der Spieler fängt ein Entity mit einem Eimer ein. In der Regel: Fische!
+- Kinder:
+  - AbstractEntityObjective
+- Options:
+
+***

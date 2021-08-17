@@ -190,7 +190,8 @@
             "CraftItemObjective",
             "ActivateQuestObjective",
             "FurnaceExtractItemObjective",
-            "EnchantItemObjective"
+            "EnchantItemObjective",
+            "BucketEntityObjective"
           ]
         },
         "options": {
