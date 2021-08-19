@@ -228,13 +228,6 @@
             "quest": {
               "$ref": "#/$defs/questIdentifier"
             },
-            "quests": {
-              "type": "array",
-              "minItems": 1,
-              "items": {
-                "$ref": "#/$defs/questIdentifier"
-              }
-            },
             "enchantments": {
               "description": "Liste von Namespaced Enchantments",
               "$ref": "#/$defs/stringArray"

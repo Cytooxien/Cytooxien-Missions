@@ -138,12 +138,10 @@ ___
 
 ```json
 {
-  "quests": [
-    {
-      "bundle": "tutorial",
-      "id": "beginner"
-    }
-  ]
+  "quest": {
+    "bundle": "tutorial",
+    "id": "beginner"
+  }
 }
 ```
 
@@ -167,7 +165,6 @@ ___
     - enchantments: String Array mit Namespaced Enchantments (Optional)
 
 Beispiel:
-
 ```json
 {
   "options": {
@@ -187,7 +184,7 @@ Beispiel:
 
 - Beschreibung: Der Spieler fängt ein Entity mit einem Eimer ein. In der Regel: Fische!
 - Kinder:
-    - AbstractEntityObjective
+  - AbstractEntityObjective
 - Options:
 
 ***
