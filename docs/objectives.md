@@ -188,3 +188,12 @@ Beispiel:
 - Options:
 
 ***
+
+### ConsumeItemObjective
+
+- Beschreibung: Der Spieler hat einen Gegenstand konsumiert (food, potion, milk bucket).
+- Kinder:
+  - AbstractItemObjective
+- Options:
+
+***

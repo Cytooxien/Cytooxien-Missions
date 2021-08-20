@@ -191,7 +191,8 @@
             "ActivateQuestObjective",
             "FurnaceExtractItemObjective",
             "EnchantItemObjective",
-            "BucketEntityObjective"
+            "BucketEntityObjective",
+            "ConsumeItemObjective"
           ]
         },
         "options": {
