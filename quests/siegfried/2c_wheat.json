@@ -16,7 +16,7 @@
           "options": {
             "display": "wheat_seeds",
             "blocks": [
-              "minecraft:wheat_seeds"
+              "minecraft:wheat"
             ]
           }
         },
