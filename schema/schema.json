@@ -192,7 +192,8 @@
             "FurnaceExtractItemObjective",
             "EnchantItemObjective",
             "BucketEntityObjective",
-            "ConsumeItemObjective"
+            "ConsumeItemObjective",
+            "BlastBlockObjective"
           ]
         },
         "options": {

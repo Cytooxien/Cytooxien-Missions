@@ -197,3 +197,12 @@ Beispiel:
 - Options:
 
 ***
+
+### BlastBlockObjective
+
+- Beschreibung: Blöcke mit TNT zersprengen
+- Kinder:
+  - AbstractBlockObjective
+- Options:
+
+***
