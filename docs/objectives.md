@@ -206,3 +206,12 @@ Beispiel:
 - Options:
 
 ***
+
+### MoveIntoBiomeObjective
+
+- Beschreibung: Der Spieler bewegt sich in ein Biom
+- Kinder:
+- Options:
+  - biomes: List von Minecraft Biomen
+
+***

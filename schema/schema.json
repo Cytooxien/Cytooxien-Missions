@@ -193,7 +193,8 @@
             "EnchantItemObjective",
             "BucketEntityObjective",
             "ConsumeItemObjective",
-            "BlastBlockObjective"
+            "BlastBlockObjective",
+            "MoveIntoBiomeObjective"
           ]
         },
         "options": {
@@ -214,6 +215,10 @@
             },
             "entities": {
               "description": "Entity Liste",
+              "$ref": "#/$defs/stringArray"
+            },
+            "biomes": {
+              "description": "Biom Liste",
               "$ref": "#/$defs/stringArray"
             },
             "action": {
