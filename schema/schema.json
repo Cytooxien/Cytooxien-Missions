@@ -194,7 +194,8 @@
             "BucketEntityObjective",
             "ConsumeItemObjective",
             "BlastBlockObjective",
-            "MoveIntoBiomeObjective"
+            "MoveIntoBiomeObjective",
+            "EffectObjective"
           ]
         },
         "options": {

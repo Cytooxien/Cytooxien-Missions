@@ -215,3 +215,12 @@ Beispiel:
   - biomes: List von Minecraft Biomen
 
 ***
+
+### EffectObjective
+
+- Beschreibung: Der Spieler bekommt einen Effekt
+- Kinder:
+- Options:
+  - effects: List von Effekten (https://i.imgur.com/CdMV3hg.png)
+
+***
