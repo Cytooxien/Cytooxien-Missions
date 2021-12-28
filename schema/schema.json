@@ -195,7 +195,10 @@
             "ConsumeItemObjective",
             "BlastBlockObjective",
             "MoveIntoBiomeObjective",
-            "EffectObjective"
+            "EffectObjective",
+            "BucketFillObjective",
+            "EntityInteractObjective",
+            "BreakSpawnerBlockObjective"
           ]
         },
         "options": {
