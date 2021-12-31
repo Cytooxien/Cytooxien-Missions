@@ -20,3 +20,11 @@ Aktuelle AccessLevel der Ränge:
 ``
 SPIELER(1), PREMIUM(10), PREMIUM_PLUS(40), VIP(50), ARCHITEKT(60), CONTENT(70), SUPPORTER(70), SR_SUPPORTER(75), MODERATOR(80), JR_DEVELOPER(85), DEVELOPER(90), SR_DEVELOPER(92), ADMIN(95), OWNER(100);
 ``
+
+***
+
+### QuestBundleCompletedRequirement
+
+- Beschreibung: Erfordert, dass ein Spieler alle Quests aus einem Quest Bundle abgeschlossen hat.
+- Options:
+  - bundle: Name/Id des Quest Bundles

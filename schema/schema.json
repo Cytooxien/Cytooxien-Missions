@@ -134,7 +134,8 @@
           "description": "Beschreibung des Handlers für die Implementierung",
           "enum": [
             "QuestCompletedRequirement",
-            "AccessLevelRequirement"
+            "AccessLevelRequirement",
+            "QuestBundleCompletedRequirement"
           ]
         },
         "options": {
@@ -148,6 +149,10 @@
             "accessLevel": {
               "minimum": 1,
               "type": "integer"
+            },
+            "bundle": {
+              "description": "Name/Id des QuestBundles",
+              "type": "string"
             }
           }
         }
@@ -242,6 +247,10 @@
             "enchantments": {
               "description": "Liste von Namespaced Enchantments",
               "$ref": "#/$defs/stringArray"
+            },
+            "server-regex": {
+              "type": "string",
+              "description": "Regex Pattern, dass zum dem Server NameId passen muss."
             }
           }
         }

@@ -2,6 +2,12 @@
 
 ___
 
+### Globale Objective Options:
+
+- Options:
+  - server-regex: Ein Objective wird nur aktiviert, wenn das Regex zur ServerId des server matched. Dies kann verwendet werden um die Auf gabe nur auf bestimmten Servern zu aktivieren bzw. zu deaktivieren.
+
+
 ## Abstrakte Objectives
 
 Abstrakte Ziele können nicht instanziiert werden. Sie stellen nur Optionen für die mehr spezifischeren Objectives dar.
@@ -222,5 +228,30 @@ Beispiel:
 - Kinder:
 - Options:
   - effects: List von Effekten (https://i.imgur.com/CdMV3hg.png)
+
+***
+
+### BucketFillObjective
+
+- Beschreibung: Der Spieler füllt einen Eimer mit einer Flüssigkeit
+- Kinder:
+  - AbstractItemObjective
+
+***
+
+### EntityInteractObjective
+
+- Beschreibung: Der Spieler interagiert mit einem Entity
+- Options:
+  - entities (Entity Predicate)
+  - items: Items die der Spieler in der Hand halten muss
+
+***
+
+### BreakSpawnerBlockObjective
+
+- Beschreibung: Der Spieler baut einen Spawner Block ab
+- Options:
+  - entityTypes: List von Bukkit EntityTypes (optional)
 
 ***
