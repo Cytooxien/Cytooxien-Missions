@@ -203,7 +203,11 @@
             "EffectObjective",
             "BucketFillObjective",
             "EntityInteractObjective",
-            "BreakSpawnerBlockObjective"
+            "BreakSpawnerBlockObjective",
+            "ComposterItemObjective",
+            "HarvestBlockObjective",
+            "TransactionExecutedObjective",
+            "BlockInteractObjective"
           ]
         },
         "options": {
@@ -251,6 +255,14 @@
             "server-regex": {
               "type": "string",
               "description": "Regex Pattern, dass zum dem Server NameId passen muss."
+            },
+            "trackCompostingChange": {
+              "type": "boolean",
+              "description": "Wenn true wird die Level Änderung als Fortschritt erfasst, sonst die elementare Aktion."
+            },
+            "transactionName": {
+              "type": "string",
+              "description": "Interner Klassenname der hinzugefügten Transaktion"
             }
           }
         }

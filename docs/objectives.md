@@ -255,3 +255,38 @@ Beispiel:
   - entityTypes: List von Bukkit EntityTypes (optional)
 
 ***
+
+### HarvestBlockObjective
+
+- Beschreibung: Der Spieler ernte Items von einem Block
+- Kinder:
+  - AbstractItemObjective
+
+***
+
+### ComposterItemObjective
+
+- Beschreibung: Der Spieler ändert das Level eines Komposters
+- Options:
+  - action: Filter für die vom Spieler durchgeführte Aktion am Komposter (Werte: ADD_ITEM, EMPTY) (optional)
+  - trackCompostingChange: Wenn true wird die Level Änderung als Fortschritt erfasst, sonst die elementare Aktion (default true).
+
+***
+
+### TransactionExecutedObjective
+
+- Beschreibung: Für den Spieler wurde eine Transaktion ausgeführt.
+- Options:
+  - transactionName: Interner Klassenname der hinzugefügten Transaktion
+  - mode: Berechnungsmodus für den Fortschritt (Werte: SUM, COUNT) SUM => Transaktionswert Fortschritt, COUNT => Transaktionsanzahl Fortschritt
+
+***
+
+### BlockInteractObjective
+
+- Beschreibung: Der Spieler interagiert mit einem Item auf einen Block.
+- Options:
+  - blocks: Filter für die interagierten Blöcken (Darf nicht leer sein)
+  - items: Filter für den bei der Interaktion verwendeten Gegenstand.
+
+***
