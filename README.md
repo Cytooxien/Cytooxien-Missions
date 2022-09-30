@@ -1,7 +1,7 @@
 # Dokumentation des Missionssystem
 
 
-Wir haben für unsere Spielmodi Skyblock, Reallife, Citybulild und Factions ein flexibles Missionssystem entwickelt, um einfach neue Missionen zu erstellen.
+Wir haben für unsere Themenserver ein flexibles Missionssystem entwickelt, um Missionen in Minecraft zu erstellen und zu verwalten.
 Hier findest du die Dokumentation unseres Missionssystem über den Aufbau und Funktionsweise.
 
 ## Unterstützung
