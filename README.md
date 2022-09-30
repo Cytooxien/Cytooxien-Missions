@@ -4,6 +4,8 @@
 Wir haben für unsere Themenserver ein flexibles Missionssystem entwickelt, um Missionen in Minecraft zu erstellen und zu verwalten.
 Hier findest du die Dokumentation unseres Missionssystem über den Aufbau und Funktionsweise.
 
+![68747470733a2f2f692e696d6775722e636f6d2f484830556e4a6c2e706e67](https://user-images.githubusercontent.com/51920026/193283398-635594c0-872d-4fd8-b2c4-9fe74d549e54.png)
+
 ## Unterstützung
 
 Möchtest du uns bei der Erstellung neuer Mission unterstützen und aktiv neuen Content für unsere Spielmodi entwickeln kannst du dich als Content bei uns [im Forum](https://cxn.link/quest-content) bewerben.
