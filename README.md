@@ -5,6 +5,7 @@ Wir haben für unsere Themenserver ein flexibles Missionssystem entwickelt, um M
 Hier findest du die Dokumentation unseres Missionssystem über den Aufbau und Funktionsweise.
 
 ![68747470733a2f2f692e696d6775722e636f6d2f484830556e4a6c2e706e67](https://user-images.githubusercontent.com/51920026/193283398-635594c0-872d-4fd8-b2c4-9fe74d549e54.png)
+![image](https://user-images.githubusercontent.com/51920026/193283832-27d0421c-2875-4524-83f8-a6cab95a1bf7.png)
 
 ## Unterstützung
 
