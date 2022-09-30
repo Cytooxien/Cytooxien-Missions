@@ -1,4 +1,14 @@
-# Dokumentation Quest/Mission System #
+# Dokumentation des Missionssystem
+
+
+Wir haben für unsere Spielmodi Skyblock, Reallife, Citybulild und Factions ein flexibles Missionssystem entwickelt, um einfach neue Missionen zu erstellen.
+Hier findest du die Dokumentation unseres Missionssystem über den Aufbau und Funktionsweise.
+
+## Unterstützung
+
+Möchtest du uns bei der Erstellung neuer Mission unterstützen und aktiv neuen Content für unsere Spielmodi entwickeln kannst du dich als Content bei uns [im Forum](https://cxn.link/quest-content) bewerben.
+
+Weitere Informationen findest du hier: [Contributing](CONTRIBUTING.md)
 
 
 ## Quest Bundles
@@ -8,7 +18,7 @@ Aus diesem Pool können einzelne Quests ausgewählt werden oder nacheinander bea
 
 Für jede Quest Bundle wird ein Ordner mit Quests geben.
 
-## Quest Model ##
+## Quest Model
 
 Das Quest Model ist das Hauptskelett einer Quest.
 Diese beschreibt den Aufbau der Quest und enthält alle Voraussetzungen, Aufgaben und Belohnungen.
@@ -56,7 +66,7 @@ Ein Objective beschreibt eine konkrete Aufgabe/Ziel, welches erreicht werden sol
 Ein Ziel hat einen Namen und einen Wert der erreicht werden soll.
 
 Mit der angabe des Types, wird festgelegt, wie der Spieler die Aufgabe beenden soll.
-Jedes Objective kann dazu Options haben, die z.B die Blöcke für das Ziel festlegt.
+Jedes Objective kann dazu Options haben, die z.B. die Blöcke für das Ziel festlegt.
 
 Eine Übersicht über alle Typen und deren Options findest du hier: [Objectives Übersicht](docs/objectives.md)
 
@@ -127,4 +137,8 @@ Eine Belohnung ist wie folgt ausgebaut:
   }
 }
 ````
+
+## Licence
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Namensnennung - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz</a>.
 
