@@ -207,7 +207,11 @@
             "ComposterItemObjective",
             "HarvestBlockObjective",
             "TransactionExecutedObjective",
-            "BlockInteractObjective"
+            "BlockInteractObjective",
+            "DisenchantItemObjective",
+            "VillagerTradeObjective",
+            "AdvancementObjective",
+            "HitTargetBlockObjective"
           ]
         },
         "options": {
@@ -263,6 +267,14 @@
             "transactionName": {
               "type": "string",
               "description": "Interner Klassenname der hinzugefügten Transaktion"
+            },
+            "signalStrength": {
+              "type": "integer",
+              "description": "Erforderliche minimum Signalstärke"
+            },
+            "advancement": {
+              "type": "string",
+              "description": "Datawert des Minecraft Fortschrittes"
             }
           }
         }
