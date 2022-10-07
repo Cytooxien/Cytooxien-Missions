@@ -291,6 +291,40 @@ Beispiel:
 
 ***
 
+### DisenchantItemObjective
+
+- Beschreibung: Der Spieler repariert oder entzaubert einen Gegenstand aus dem Schleifstein/Grindstone
+- Kinder:
+  - AbstractItemObjective
+- Options:
+  - items: Ausgangsgegenstand der entzaubert oder repariert werden soll (vorher)
+
+***
+
+### VillagerTradeObjective
+
+- Beschreibung: Der Spieler handelt einen Gegenstand mit einem Villager
+- Kinder:
+  - AbstractItemObjective
+***
+
+### AdvancementObjective
+
+- Beschreibung: Der Spieler erreicht ein Minecraft Advancement
+- Kinder:
+  - AbstractItemObjective
+- Options:
+  - advancement: Minecraft Advancement Daten Wert [Siehe Minecraft Wiki](https://minecraft.fandom.com/de/wiki/Fortschritte)
+***
+
+### HitTargetBlockObjective
+
+- Beschreibung: Der Spieler trifft einen Zielblock/TargetBlock (Nur auf Paper verfügbar)
+- Options:
+  - entities (EntityTypeList): Verwendetes Entity Projektil
+  - signalStrength (int): Minimum Signalstärke (Optional)
+***
+
 ### SmithItemObjective
 
 - Beschreibung: Der Spieler wertet im Schmiedetisch einen Gegenstand aus Diamant mit einem Netheritbarren zu einem Gegenstand aus Netherit auf.
