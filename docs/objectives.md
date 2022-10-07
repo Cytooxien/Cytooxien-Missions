@@ -324,3 +324,13 @@ Beispiel:
   - entities (EntityTypeList): Verwendetes Entity Projektil
   - signalStrength (int): Minimum Signalstärke (Optional)
 ***
+
+### SmithItemObjective
+
+- Beschreibung: Der Spieler wertet im Schmiedetisch einen Gegenstand aus Diamant mit einem Netheritbarren zu einem Gegenstand aus Netherit auf.
+- Kinder:
+  - AbstractItemObjective
+- Options:
+  - items: Der aufgewertete Gegenstand (Result)
+
+***
