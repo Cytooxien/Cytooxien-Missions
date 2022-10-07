@@ -207,7 +207,8 @@
             "ComposterItemObjective",
             "HarvestBlockObjective",
             "TransactionExecutedObjective",
-            "BlockInteractObjective"
+            "BlockInteractObjective",
+            "SmithItemObjective"
           ]
         },
         "options": {
