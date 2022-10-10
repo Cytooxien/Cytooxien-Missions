@@ -212,7 +212,8 @@
             "VillagerTradeObjective",
             "AdvancementObjective",
             "HitTargetBlockObjective",
-            "SmithItemObjective"
+            "SmithItemObjective",
+            "GameEventObjective"
           ]
         },
         "options": {
@@ -276,6 +277,10 @@
             "advancement": {
               "type": "string",
               "description": "Datawert des Minecraft Fortschrittes"
+            },
+            "event": {
+              "type": "string",
+              "description": "Minecraft Id des Game Events"
             }
           }
         }

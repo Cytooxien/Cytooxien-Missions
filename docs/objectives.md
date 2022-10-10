@@ -334,3 +334,14 @@ Beispiel:
   - items: Der aufgewertete Gegenstand (Result)
 
 ***
+
+### GameEventObjective
+
+- Beschreibung: Der Spieler löst ein GameEvent aus
+- Kinder:
+  - AbstractOptionalBlockObjective
+- Options:
+  - event: Minecraft Id des ausgelösten Events
+  - block: Block an der Position des ausgelösten Events (Optional)
+
+***
