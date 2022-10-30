@@ -266,10 +266,12 @@ Beispiel:
 
 ### ComposterItemObjective
 
-- Beschreibung: Der Spieler ändert das Level eines Komposters
+- Beschreibung: Der Spieler fügt ein Gegenstand zum Komposter hinzu
+- Kinder:
+  - AbstractItemObjective
 - Options:
   - action: Filter für die vom Spieler durchgeführte Aktion am Komposter (Werte: ADD_ITEM, EMPTY) (optional)
-  - trackCompostingChange: Wenn true wird die Level Änderung als Fortschritt erfasst, sonst die elementare Aktion (default true).
+  - items: Gegenstand der hinzugefügt werden soll (optional).
 
 ***
 
