@@ -353,6 +353,6 @@ Beispiel:
   - AbstractBlockObjective
 - Options:
   - items: Filter für den erhaltenen Gegenstand.
-  - block: Block aus dem der Gegenstand erzeugt wird (Optional)
+  - block: Block, aus dem der Gegenstand erzeugt wird
 
 ***
