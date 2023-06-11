@@ -213,7 +213,8 @@
             "AdvancementObjective",
             "HitTargetBlockObjective",
             "SmithItemObjective",
-            "GameEventObjective"
+            "GameEventObjective",
+            "BlockDropItemObjective"
           ]
         },
         "options": {

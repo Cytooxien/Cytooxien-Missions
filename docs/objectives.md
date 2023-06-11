@@ -345,3 +345,14 @@ Beispiel:
   - block: Block an der Position des ausgelösten Events (Optional)
 
 ***
+
+### BlockDropItemObjective
+
+- Beschreibung: Der Spieler erhält einen Gegenstand aus einem Block. Beispielsweise, wenn der Spieler einen Block mit einem Pinsel behandelt. Aus einem Block können mehrere Gegenstände erzeugt werden.
+- Kinder:
+  - AbstractBlockObjective
+- Options:
+  - items: Filter für den erhaltenen Gegenstand.
+  - block: Block aus dem der Gegenstand erzeugt wird (Optional)
+
+***
