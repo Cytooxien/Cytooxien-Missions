@@ -364,7 +364,7 @@
         },
         "toHologramY": {
           "description": "Increases the hologram height",
-          "type": "double"
+          "type": "number"
         }
       },
       "required": [
