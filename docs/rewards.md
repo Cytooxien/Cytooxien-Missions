@@ -10,7 +10,7 @@
 
 In der ItemStack Liste können folgende Elemente enthalten sein:
 
-- ItemStack im Mongang NBT String Format (Mit DataVersion)
+- ItemStack im Mojang NBT String Format (Mit DataVersion)
 - Minecraft Namespaced Types
   oder [Bukkit Material Types](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
 

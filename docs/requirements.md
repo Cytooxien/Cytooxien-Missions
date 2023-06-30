@@ -28,3 +28,13 @@ SPIELER(1), PREMIUM(10), PREMIUM_PLUS(40), VIP(50), ARCHITEKT(60), CONTENT(70), 
 - Beschreibung: Erfordert, dass ein Spieler alle Quests aus einem Quest Bundle abgeschlossen hat.
 - Options:
   - bundle: Name/Id des Quest Bundles
+
+***
+
+### SupplyItemStackRequirement
+
+- Beschreibung: Der Spieler erhält beim Start der Mission einige Gegenstände. Analog zum ItemStackReward.
+- Options:
+  - items: ItemStack List als Json String Array
+
+Für weitere Informationen siehe `ItemStackReward`
