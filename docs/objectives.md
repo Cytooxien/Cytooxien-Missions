@@ -111,10 +111,14 @@ ___
   "npc": {
     "skinValue": "value",
     "skinSignature": "sig",
-    "name": "NPC Name"
+    "name": "NPC Name",
+	"visibleHologram": true,
+	"toHologramY": 0.0
   }
 }
 ```
+
+visibleHologram und toHologramY sind optional. Defaultwerte wie oben eingetragen.
 
 ***
 
