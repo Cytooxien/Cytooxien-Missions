@@ -64,11 +64,11 @@
           "description": "Soll die BossBar während der Mission angezeigt werden",
           "type": "boolean"
         },
-        "canBeAborted":{
+        "canBeAborted": {
           "description": "Soll der Benutzer die Mission selbstständig abbrechen könen. Fortschritt der Mission geht verloren.",
           "type": "boolean"
         },
-        "abortDelay":{
+        "abortDelay": {
           "description": "Zeit die der Benutzer warten muss, bis er die Mission abbrechen kann in Minuten",
           "type": "number"
         }

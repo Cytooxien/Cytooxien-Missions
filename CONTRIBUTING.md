@@ -2,11 +2,12 @@
 
 ## Ideen & Vorschläge
 
-Wir sind immer dabei unsere bestehende Missionen weiter auszubauen. 
-Falls ihr gute Ideen für neue Objektives oder Rewards habt, könnt ihr diese über einen [Issue](https://github.com/Cytooxien/Cytooxien-Mission-Template/issues/new/choose) einreichen/vorstellen.
+Wir sind immer dabei unsere bestehende Missionen weiter auszubauen.
+Falls ihr gute Ideen für neue Objektives oder Rewards habt, könnt ihr diese über
+einen [Issue](https://github.com/Cytooxien/Cytooxien-Mission-Template/issues/new/choose) einreichen/vorstellen.
 
-
-Wenn ihr uns bei der Erstellung neuer Quests unterstützen wollt, könnt ihr euch bei als [Content im Forum](https://cxn.link/quest-content) bewerben.
+Wenn ihr uns bei der Erstellung neuer Quests unterstützen wollt, könnt ihr euch bei
+als [Content im Forum](https://cxn.link/quest-content) bewerben.
 
 ## Quest-Creator-Webtool
 

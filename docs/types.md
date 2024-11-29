@@ -30,5 +30,6 @@ Eine EntityTypeList enthält Entity Typen. Aktuell unterstützt werden:
 
 - Minecraft und [Bukkit EntityTypes](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html) Types
 - MONSTER, CREATURE, AMBIENT, WATER_CREATURE, WATER_AMBIENT, MISC
+
 ***
 

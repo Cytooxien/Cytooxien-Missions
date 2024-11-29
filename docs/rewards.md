@@ -21,11 +21,10 @@ möglich!
 
 *** 
 
-
 ### TransactionReward
+
 - Beschreibung: Der Spieler erhält Geld.
 - Options:
-  - amount: 10.0 (double)
-
+    - amount: 10.0 (double)
 
 ***
