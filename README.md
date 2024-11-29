@@ -28,6 +28,12 @@ Diese beschreibt den Aufbau der Quest und enthält alle Voraussetzungen, Aufgabe
 
 Der Name wird intern benutzt und **muss einzigartig** sein innerhalb eines Bundles
 
+Optionen:
+- canBeAborted: Kann die Quest abgebrochen werden
+- abortDelay: Zeit in Minuten, bevor die Quest abgebrochen werden kann
+- bossbar: Soll eine Bossbar angezeigt werden
+- activeByDefault: Soll die Quest standardmäßig aktiviert sein
+
 Die Quest wird als `.json` Datei in dem QuestBundle Ordner platziert.
 
 Eine Quest ist wie folgt aufgebaut:
@@ -37,6 +43,12 @@ Eine Quest ist wie folgt aufgebaut:
   "id": "exampleQuest1",
   "displayName": "Beispiel Quest 1",
   "description": "Farme 20 Stein Blöcke",
+  "options": {
+    "canBeAborted": true,
+    "abortDelay": 0,
+    "bossbar": false,
+    "activeByDefault": false
+  },
   "stages": [
     //Siehe Stufen
   ],
