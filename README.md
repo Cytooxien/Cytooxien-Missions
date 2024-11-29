@@ -72,6 +72,10 @@ Ein Ziel hat einen Namen und einen Wert der erreicht werden soll.
 Mit der angabe des Types, wird festgelegt, wie der Spieler die Aufgabe beenden soll.
 Jedes Objective kann dazu Options haben, die z.B. die Blöcke für das Ziel festlegt.
 
+Weitere Felder:
+
+- abortQuestOnCompletion: Sollte das Objective erfüllt werden, bricht die Quest ab.
+
 Eine Übersicht über alle Typen und deren Options findest du hier: [Objectives Übersicht](docs/objectives.md)
 
 Ein Objective ist wie folgt ausgebaut:
@@ -81,6 +85,7 @@ Ein Objective ist wie folgt ausgebaut:
   "id": "break1",
   "displayName": "Baue 20 Steinblöcke ab.",
   "goal": 20,
+  "abortQuestOnCompletion": false,
   "type": "BreakBlockObjective",
   "options": {
     "blocks": [

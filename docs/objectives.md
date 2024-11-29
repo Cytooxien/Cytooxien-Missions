@@ -112,8 +112,8 @@ ___
     "skinValue": "value",
     "skinSignature": "sig",
     "name": "NPC Name",
-	"visibleHologram": true,
-	"toHologramY": 0.0
+    "visibleHologram": true,
+    "toHologramY": 0.0
   }
 }
 ```
@@ -368,4 +368,81 @@ Beispiel:
     - items: Filter für den erhaltenen Gegenstand.
     - block: Block, aus dem der Gegenstand erzeugt wird
 
+***
+
+### OnlyUpFallObjective
+
+- Beschreibung: Der Spieler fällt herunter.
+- Options:
+    - world: Name/UUID der Welt
+    - mode: (Default: `SUM`)
+        - `SUM`: Summe der Fälle (Default)
+        - `CONTINUOUS`: Kontinuierlicher Fall'
+    - landInWater: Ob der Spieler im Wasser landen muss (Default: false)
+
+***
+
+### OnlyUpFinishMapObjective
+
+- Beschreibung: Der Spieler erreicht das Ziel.
+- Options:
+    - world: Name/UUID der Welt
+    - time: maximale Zeit in Millisekunden (optional)
+
+***
+
+### OnlyUpLocationTimeObjective
+
+- Beschreibung: Der Spieler erreicht eine bestimmte Position innerhalb einer bestimmten Zeit.
+- Options:
+    - location: EntityWorldLocation (X, Y, Z, World)
+    - time: maximale Zeit in Millisekunden
+    - radius: Radius um die Position
+
+***
+
+### TouchBlockObjective
+
+- Beschreibung: Der Spieler läuft über bestimmte Blöcke.
+- Options:
+    - blocks : [BlockList](types.md) Json String Array
+
+***
+
+### PlayerJumpObjective
+
+- Beschreibung: Der Spieler springt. (Nur auf Paper verfügbar)
+- Options:
+    - world: UUID/Name der Welt (optional)
+
+***
+
+### PlayerClimbObjective
+
+- Beschreibung: Der Spieler klettert hoch.
+- Options:
+    - world: UUID/Name der Welt (optional)
+
+***
+
+### NearLocationObjective
+
+- Beschreibung: Der Spieler nähert sich einer Position.
+- Options:
+    - location: EntityWorldLocation (X, Y, Z, World)
+    - radius: Radius um die Position
+
+***
+
+### SpecialBlockActionObjective
+
+- Beschreibung: Der Spieler läuft über bestimmte Blöcke.
+- Options:
+    - action:
+        - `JUMP_BLOCK_BOOST`
+        - `TELEPORT_PLAYER`
+        - `MODELBLOCK_USE`
+        - `OTHER`
+    - keys: String Array von ModelBlock Keys (optional)
+  
 ***
