@@ -97,7 +97,10 @@
           "description": "Beschreibung des Handlers für die Implementierung",
           "enum": [
             "ItemStackReward",
-            "TransactionReward"
+            "TransactionReward",
+            "OnlyUpTrophyReward",
+            "CosmeticReward",
+            "CrystalReward"
           ]
         },
         "options": {
@@ -144,7 +147,8 @@
             "QuestCompletedRequirement",
             "AccessLevelRequirement",
             "QuestBundleCompletedRequirement",
-            "SupplyItemStackRequirement"
+            "SupplyItemStackRequirement",
+            "OnlyUpTrophyRequirement"
           ]
         },
         "options": {
@@ -228,7 +232,15 @@
             "SmithItemObjective",
             "BlockInteractObjective",
             "GameEventObjective",
-            "BlockDropItemObjective"
+            "BlockDropItemObjective",
+            "OnlyUpFallObjective",
+            "OnlyUpFinishMapObjective",
+            "OnlyUpLocationTimeObjective",
+            "TouchBlockObjective",
+            "PlayerJumpObjective",
+            "PlayerClimbObjective",
+            "NearLocationObjective",
+            "SpecialBlockActionObjective"
           ]
         },
         "options": {
