@@ -41,7 +41,9 @@
       "displayName": "1x Diamant",
       "type": "ItemStackReward",
       "options": {
-        "items": ["{DataVersion:2586,id:\"minecraft:diamond\",Count:1b}"]
+        "items": [
+          "{DataVersion:2586,id:\"minecraft:diamond\",Count:1b}"
+        ]
       }
     }
   ]

@@ -1,7 +1,7 @@
 # Dokumentation des Missionssystem
 
-
-Wir haben für unsere Themenserver ein flexibles Missionssystem entwickelt, um Missionen in Minecraft zu erstellen und zu verwalten.
+Wir haben für unsere Themenserver ein flexibles Missionssystem entwickelt, um Missionen in Minecraft zu erstellen und zu
+verwalten.
 Hier findest du die Dokumentation unseres Missionssystem über den Aufbau und Funktionsweise.
 
 ![68747470733a2f2f692e696d6775722e636f6d2f484830556e4a6c2e706e67](https://user-images.githubusercontent.com/51920026/193283398-635594c0-872d-4fd8-b2c4-9fe74d549e54.png)
@@ -9,10 +9,10 @@ Hier findest du die Dokumentation unseres Missionssystem über den Aufbau und Fu
 
 ## Unterstützung
 
-Möchtest du uns bei der Erstellung neuer Mission unterstützen und aktiv neuen Content für unsere Spielmodi entwickeln kannst du dich als Content bei uns [im Forum](https://cxn.link/quest-content) bewerben.
+Möchtest du uns bei der Erstellung neuer Mission unterstützen und aktiv neuen Content für unsere Spielmodi entwickeln
+kannst du dich als Content bei uns [im Forum](https://cxn.link/quest-content) bewerben.
 
 Weitere Informationen findest du hier: [Contributing](CONTRIBUTING.md)
-
 
 ## Quest Bundles
 
@@ -28,16 +28,29 @@ Diese beschreibt den Aufbau der Quest und enthält alle Voraussetzungen, Aufgabe
 
 Der Name wird intern benutzt und **muss einzigartig** sein innerhalb eines Bundles
 
+Optionen:
+- canBeAborted: Kann die Quest abgebrochen werden
+- abortDelay: Zeit in Minuten, bevor die Quest abgebrochen werden kann
+- bossbar: Soll eine Bossbar angezeigt werden
+- activeByDefault: Soll die Quest standardmäßig aktiviert sein
+
 Die Quest wird als `.json` Datei in dem QuestBundle Ordner platziert.
 
 Eine Quest ist wie folgt aufgebaut:
+
 ```json
 {
   "id": "exampleQuest1",
   "displayName": "Beispiel Quest 1",
   "description": "Farme 20 Stein Blöcke",
+  "options": {
+    "canBeAborted": true,
+    "abortDelay": 0,
+    "bossbar": false,
+    "activeByDefault": false
+  },
   "stages": [
-     //Siehe Stufen
+    //Siehe Stufen
   ],
   "requirements": [
     //Siehe Vorraussetzungen
@@ -48,7 +61,7 @@ Eine Quest ist wie folgt aufgebaut:
 }
 ```
 
-##  Quest Stufen
+## Quest Stufen
 
 Die Quest Stufen werden in der definierten Reihenfolge abgearbeitet.
 Jede Stufe kann aus beliebig vielen Objectives bestehen.
@@ -59,7 +72,7 @@ Eine Stage ist wie folgt aufgebaut:
 {
   "objectives": [
     //Siehe Objectives
-  ] 
+  ]
 }
 ```
 
@@ -71,17 +84,23 @@ Ein Ziel hat einen Namen und einen Wert der erreicht werden soll.
 Mit der angabe des Types, wird festgelegt, wie der Spieler die Aufgabe beenden soll.
 Jedes Objective kann dazu Options haben, die z.B. die Blöcke für das Ziel festlegt.
 
+Weitere Felder:
+
+- abortQuestOnCompletion: Sollte das Objective erfüllt werden, bricht die Quest ab.
+
 Eine Übersicht über alle Typen und deren Options findest du hier: [Objectives Übersicht](docs/objectives.md)
 
 Ein Objective ist wie folgt ausgebaut:
+
  ```json
 {
   "id": "break1",
   "displayName": "Baue 20 Steinblöcke ab.",
   "goal": 20,
+  "abortQuestOnCompletion": false,
   "type": "BreakBlockObjective",
   "options": {
-    "blocks" : [
+    "blocks": [
       "minecraft:stone"
     ]
   }
@@ -98,7 +117,8 @@ Das Vorgehen ist Analog zu den Objectives.
 Durch die Angabe eines Types wird die Voraussetzungen spezifiziert und mittels Options konfiguriert werden.
 
 Weitere Felder:
--  checkOnlyAtStart: Die Voraussetzung wird nur beim start der Quest validiert.
+
+- checkOnlyAtStart: Die Voraussetzung wird nur beim start der Quest validiert.
 
 Eine Übersicht über alle Typen und deren Options findest du hier: [Übersicht Voraussetzung](docs/requirements.md)
 
@@ -110,7 +130,7 @@ Eine Voraussetzung ist wie folgt ausgebaut:
   "displayName": "Premium Quest",
   "type": "GroupRequirement",
   "checkOnlyAtStart": true,
-  "options" : {
+  "options": {
     "rank": "PREMIUM"
   }
 }
@@ -128,6 +148,7 @@ Durch die Angabe eines Types wird die Belohnung spezifiziert und mittels Options
 Eine Übersicht über alle Typen und deren Options findest du hier: [Übersicht Belohnungen](docs/rewards.md)
 
 Eine Belohnung ist wie folgt ausgebaut:
+
 ````json
 {
   "id": "reward1",
@@ -143,5 +164,7 @@ Eine Belohnung ist wie folgt ausgebaut:
 
 ## Licence
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Namensnennung - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />
+Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+Creative Commons Namensnennung - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz</a>.
 

@@ -5,8 +5,8 @@ ___
 ### Globale Objective Options:
 
 - Options:
-  - server-regex: Ein Objective wird nur aktiviert, wenn das Regex zur ServerId des server matched. Dies kann verwendet werden um die Auf gabe nur auf bestimmten Servern zu aktivieren bzw. zu deaktivieren.
-
+    - server-regex: Ein Objective wird nur aktiviert, wenn das Regex zur ServerId des server matched. Dies kann
+      verwendet werden um die Auf gabe nur auf bestimmten Servern zu aktivieren bzw. zu deaktivieren.
 
 ## Abstrakte Objectives
 
@@ -112,8 +112,8 @@ ___
     "skinValue": "value",
     "skinSignature": "sig",
     "name": "NPC Name",
-	"visibleHologram": true,
-	"toHologramY": 0.0
+    "visibleHologram": true,
+    "toHologramY": 0.0
   }
 }
 ```
@@ -175,6 +175,7 @@ visibleHologram und toHologramY sind optional. Defaultwerte wie oben eingetragen
     - enchantments: String Array mit Namespaced Enchantments (Optional)
 
 Beispiel:
+
 ```json
 {
   "options": {
@@ -194,7 +195,7 @@ Beispiel:
 
 - Beschreibung: Der Spieler fängt ein Entity mit einem Eimer ein. In der Regel: Fische!
 - Kinder:
-  - AbstractEntityObjective
+    - AbstractEntityObjective
 - Options:
 
 ***
@@ -203,7 +204,7 @@ Beispiel:
 
 - Beschreibung: Der Spieler hat einen Gegenstand konsumiert (food, potion, milk bucket).
 - Kinder:
-  - AbstractItemObjective
+    - AbstractItemObjective
 - Options:
 
 ***
@@ -212,7 +213,7 @@ Beispiel:
 
 - Beschreibung: Blöcke mit TNT zersprengen
 - Kinder:
-  - AbstractBlockObjective
+    - AbstractBlockObjective
 - Options:
 
 ***
@@ -222,7 +223,7 @@ Beispiel:
 - Beschreibung: Der Spieler bewegt sich in ein Biom
 - Kinder:
 - Options:
-  - biomes: List von Minecraft Biomen
+    - biomes: List von Minecraft Biomen
 
 ***
 
@@ -231,7 +232,7 @@ Beispiel:
 - Beschreibung: Der Spieler bekommt einen Effekt
 - Kinder:
 - Options:
-  - effects: List von Effekten (https://i.imgur.com/CdMV3hg.png)
+    - effects: List von Effekten (https://i.imgur.com/CdMV3hg.png)
 
 ***
 
@@ -239,7 +240,7 @@ Beispiel:
 
 - Beschreibung: Der Spieler füllt einen Eimer mit einer Flüssigkeit
 - Kinder:
-  - AbstractItemObjective
+    - AbstractItemObjective
 
 ***
 
@@ -247,8 +248,8 @@ Beispiel:
 
 - Beschreibung: Der Spieler interagiert mit einem Entity
 - Options:
-  - entities (Entity Predicate)
-  - items: Items die der Spieler in der Hand halten muss
+    - entities (Entity Predicate)
+    - items: Items die der Spieler in der Hand halten muss
 
 ***
 
@@ -256,7 +257,7 @@ Beispiel:
 
 - Beschreibung: Der Spieler baut einen Spawner Block ab
 - Options:
-  - entityTypes: List von Bukkit EntityTypes (optional)
+    - entityTypes: List von Bukkit EntityTypes (optional)
 
 ***
 
@@ -264,7 +265,7 @@ Beispiel:
 
 - Beschreibung: Der Spieler ernte Items von einem Block
 - Kinder:
-  - AbstractItemObjective
+    - AbstractItemObjective
 
 ***
 
@@ -272,8 +273,9 @@ Beispiel:
 
 - Beschreibung: Der Spieler ändert das Level eines Komposters
 - Options:
-  - action: Filter für die vom Spieler durchgeführte Aktion am Komposter (Werte: ADD_ITEM, EMPTY) (optional)
-  - trackCompostingChange: Wenn true wird die Level Änderung als Fortschritt erfasst, sonst die elementare Aktion (default true).
+    - action: Filter für die vom Spieler durchgeführte Aktion am Komposter (Werte: ADD_ITEM, EMPTY) (optional)
+    - trackCompostingChange: Wenn true wird die Level Änderung als Fortschritt erfasst, sonst die elementare Aktion (
+      default true).
 
 ***
 
@@ -281,8 +283,9 @@ Beispiel:
 
 - Beschreibung: Für den Spieler wurde eine Transaktion ausgeführt.
 - Options:
-  - transactionName: Interner Klassenname der hinzugefügten Transaktion
-  - mode: Berechnungsmodus für den Fortschritt (Werte: SUM, COUNT) SUM => Transaktionswert Fortschritt, COUNT => Transaktionsanzahl Fortschritt
+    - transactionName: Interner Klassenname der hinzugefügten Transaktion
+    - mode: Berechnungsmodus für den Fortschritt (Werte: SUM, COUNT) SUM => Transaktionswert Fortschritt, COUNT =>
+      Transaktionsanzahl Fortschritt
 
 ***
 
@@ -290,8 +293,8 @@ Beispiel:
 
 - Beschreibung: Der Spieler interagiert mit einem Item auf einen Block.
 - Options:
-  - blocks: Filter für die interagierten Blöcken (Darf nicht leer sein)
-  - items: Filter für den bei der Interaktion verwendeten Gegenstand.
+    - blocks: Filter für die interagierten Blöcken (Darf nicht leer sein)
+    - items: Filter für den bei der Interaktion verwendeten Gegenstand.
 
 ***
 
@@ -299,9 +302,9 @@ Beispiel:
 
 - Beschreibung: Der Spieler repariert oder entzaubert einen Gegenstand aus dem Schleifstein/Grindstone
 - Kinder:
-  - AbstractItemObjective
+    - AbstractItemObjective
 - Options:
-  - items: Ausgangsgegenstand der entzaubert oder repariert werden soll (vorher)
+    - items: Ausgangsgegenstand der entzaubert oder repariert werden soll (vorher)
 
 ***
 
@@ -309,33 +312,38 @@ Beispiel:
 
 - Beschreibung: Der Spieler handelt einen Gegenstand mit einem Villager
 - Kinder:
-  - AbstractItemObjective
+    - AbstractItemObjective
+
 ***
 
 ### AdvancementObjective
 
 - Beschreibung: Der Spieler erreicht ein Minecraft Advancement
 - Kinder:
-  - AbstractItemObjective
+    - AbstractItemObjective
 - Options:
-  - advancement: Minecraft Advancement Daten Wert [Siehe Minecraft Wiki](https://minecraft.fandom.com/de/wiki/Fortschritte)
+    - advancement: Minecraft Advancement Daten
+      Wert [Siehe Minecraft Wiki](https://minecraft.fandom.com/de/wiki/Fortschritte)
+
 ***
 
 ### HitTargetBlockObjective
 
 - Beschreibung: Der Spieler trifft einen Zielblock/TargetBlock (Nur auf Paper verfügbar)
 - Options:
-  - entities (EntityTypeList): Verwendetes Entity Projektil
-  - signalStrength (int): Minimum Signalstärke (Optional)
+    - entities (EntityTypeList): Verwendetes Entity Projektil
+    - signalStrength (int): Minimum Signalstärke (Optional)
+
 ***
 
 ### SmithItemObjective
 
-- Beschreibung: Der Spieler wertet im Schmiedetisch einen Gegenstand aus Diamant mit einem Netheritbarren zu einem Gegenstand aus Netherit auf.
+- Beschreibung: Der Spieler wertet im Schmiedetisch einen Gegenstand aus Diamant mit einem Netheritbarren zu einem
+  Gegenstand aus Netherit auf.
 - Kinder:
-  - AbstractItemObjective
+    - AbstractItemObjective
 - Options:
-  - items: Der aufgewertete Gegenstand (Result)
+    - items: Der aufgewertete Gegenstand (Result)
 
 ***
 
@@ -343,20 +351,98 @@ Beispiel:
 
 - Beschreibung: Der Spieler löst ein GameEvent aus
 - Kinder:
-  - AbstractOptionalBlockObjective
+    - AbstractOptionalBlockObjective
 - Options:
-  - event: Minecraft Id des ausgelösten Events
-  - block: Block an der Position des ausgelösten Events (Optional)
+    - event: Minecraft Id des ausgelösten Events
+    - block: Block an der Position des ausgelösten Events (Optional)
 
 ***
 
 ### BlockDropItemObjective
 
-- Beschreibung: Der Spieler erhält einen Gegenstand aus einem Block. Beispielsweise, wenn der Spieler einen Block mit einem Pinsel behandelt. Aus einem Block können mehrere Gegenstände erzeugt werden.
+- Beschreibung: Der Spieler erhält einen Gegenstand aus einem Block. Beispielsweise, wenn der Spieler einen Block mit
+  einem Pinsel behandelt. Aus einem Block können mehrere Gegenstände erzeugt werden.
 - Kinder:
-  - AbstractBlockObjective
+    - AbstractBlockObjective
 - Options:
-  - items: Filter für den erhaltenen Gegenstand.
-  - block: Block, aus dem der Gegenstand erzeugt wird
+    - items: Filter für den erhaltenen Gegenstand.
+    - block: Block, aus dem der Gegenstand erzeugt wird
 
+***
+
+### OnlyUpFallObjective
+
+- Beschreibung: Der Spieler fällt herunter.
+- Options:
+    - world: Name/UUID der Welt
+    - mode: (Default: `SUM`)
+        - `SUM`: Summe der Fälle (Default)
+        - `CONTINUOUS`: Kontinuierlicher Fall'
+    - landInWater: Ob der Spieler im Wasser landen muss (Default: false)
+
+***
+
+### OnlyUpFinishMapObjective
+
+- Beschreibung: Der Spieler erreicht das Ziel.
+- Options:
+    - world: Name/UUID der Welt
+    - time: maximale Zeit in Millisekunden (optional)
+
+***
+
+### OnlyUpLocationTimeObjective
+
+- Beschreibung: Der Spieler erreicht eine bestimmte Position innerhalb einer bestimmten Zeit.
+- Options:
+    - location: EntityWorldLocation (X, Y, Z, World)
+    - time: maximale Zeit in Millisekunden
+    - radius: Radius um die Position
+
+***
+
+### TouchBlockObjective
+
+- Beschreibung: Der Spieler läuft über bestimmte Blöcke.
+- Options:
+    - blocks : [BlockList](types.md) Json String Array
+
+***
+
+### PlayerJumpObjective
+
+- Beschreibung: Der Spieler springt. (Nur auf Paper verfügbar)
+- Options:
+    - world: UUID/Name der Welt (optional)
+
+***
+
+### PlayerClimbObjective
+
+- Beschreibung: Der Spieler klettert hoch.
+- Options:
+    - world: UUID/Name der Welt (optional)
+
+***
+
+### NearLocationObjective
+
+- Beschreibung: Der Spieler nähert sich einer Position.
+- Options:
+    - location: EntityWorldLocation (X, Y, Z, World)
+    - radius: Radius um die Position
+
+***
+
+### SpecialBlockActionObjective
+
+- Beschreibung: Der Spieler läuft über bestimmte Blöcke.
+- Options:
+    - action:
+        - `JUMP_BLOCK_BOOST`
+        - `TELEPORT_PLAYER`
+        - `MODELBLOCK_USE`
+        - `OTHER`
+    - keys: String Array von ModelBlock Keys (optional)
+  
 ***

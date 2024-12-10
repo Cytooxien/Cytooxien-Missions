@@ -21,11 +21,33 @@ möglich!
 
 *** 
 
-
 ### TransactionReward
+
 - Beschreibung: Der Spieler erhält Geld.
 - Options:
-  - amount: 10.0 (double)
-
+    - amount: 10.0 (double)
 
 ***
+
+### OnlyUpTrophyReward
+
+- Beschreibung: Der Spieler erhält Trophäen auf einer Map.
+- Options
+    - world: Name/UUID der Welt
+    - trophies: Anzahl der Trophäen
+
+***
+
+### CosmeticReward
+
+- Beschreibung: Der Spieler erhält ein Cosmetic.
+- Options
+    - cosmetic: CosmeticKey des Cosmetic
+
+***
+
+### CrystalReward
+
+- Beschreibung: Der Spieler erhält Kristalle.
+- Options
+    - amount: Anzahl an Kristallen

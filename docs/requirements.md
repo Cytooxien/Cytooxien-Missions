@@ -27,7 +27,7 @@ SPIELER(1), PREMIUM(10), PREMIUM_PLUS(40), VIP(50), ARCHITEKT(60), CONTENT(70), 
 
 - Beschreibung: Erfordert, dass ein Spieler alle Quests aus einem Quest Bundle abgeschlossen hat.
 - Options:
-  - bundle: Name/Id des Quest Bundles
+    - bundle: Name/Id des Quest Bundles
 
 ***
 
@@ -35,6 +35,17 @@ SPIELER(1), PREMIUM(10), PREMIUM_PLUS(40), VIP(50), ARCHITEKT(60), CONTENT(70), 
 
 - Beschreibung: Der Spieler erhält beim Start der Mission einige Gegenstände. Analog zum ItemStackReward.
 - Options:
-  - items: ItemStack List als Json String Array
+    - items: ItemStack List als Json String Array
 
 Für weitere Informationen siehe `ItemStackReward`
+
+***
+
+### OnlyUpTrophyRequirement
+
+- Beschreibung: Erfordert, dass ein Spieler eine Anzahl an Trophäen auf einer Map hat.
+- Options
+    - world: Name/UUID der Welt
+    - trophies: Anzahl der Trophäen
+
+***

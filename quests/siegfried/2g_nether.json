@@ -2,7 +2,6 @@
   "id": "2g_nether",
   "displayName": "In die Unterwelt",
   "description": "Begebe dich in die Hölle für ein paar gefährliche Besorgungen.",
-
   "options": {
     "display": "blaze_rod"
   },
