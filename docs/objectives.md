@@ -446,3 +446,10 @@ Beispiel:
     - keys: String Array von ModelBlock Keys (optional)
   
 ***
+
+### EnterWorldObjective
+
+- Beschreibung: Der Spieler betritt eine Welt.
+- Options:
+    - world: UUID/Name der Welt (optional)
+    - environment: Umgebung der Welt (optional) NORMAL, NETHER, THE_END oder CUSTOM
